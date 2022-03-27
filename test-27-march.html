@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style> b{color: brown; } section{color: blue;font-size: 30px;} </style>
+<script>
+var library = [{
+    author: 'Bill Gates',
+    title: 'The Road Ahead',
+    readingStatus: true
+    },{
+    author: 'Steve Jobs',
+    title: 'Walter Isaacson',
+    readingStatus: true
+    },{
+    author: 'Suzanne Collins',
+    title: 'Mockingjay: The Final Book of The Hunger Games',
+    readingStatus: false
+    }];
+    document.write(" <section>Reading Book</section>")
+    var i;
+    for(i=0;i<library.length;i++)
+    {
+        if(library[i].readingStatus == true){
+            document.write(" <br><b> <p>Auther : "+library[i].author+"</p></b>")
+            document.write( " <br>Title: " +library[i].title )
+            document.write(" <br>Reading Status :" +library[i].readingStatus + "<br>") }
+        else{
+            document.write("<br><b><p>Auther : "+library[i].author +"</p></b>")
+            document.write("<br>Title: " +library[i].title )
+            document.write("<br>Reading Status : " +library[i].readingStatus+ "<br>")}  }
+</script>
+</head>
+	<body>
+	</body>
+</html>
